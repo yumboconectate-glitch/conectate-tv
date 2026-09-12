@@ -1,0 +1,6 @@
+@extends('layout')
+@section('heading','API')
+@section('subtitle','Integración segura de Conectate OSS y automatizaciones')
+@section('content')
+<div class="panel"><h2>API v1</h2><div class="flash {{ $configured?'ok':'warn' }}">Bearer Token: {{ $configured?'CONFIGURADO':'NO CONFIGURADO' }}</div><p class="muted">El token no se muestra en el panel. En el servidor está protegido en <span class="mono">/home/conectate/conectate-tv-api-token.txt</span>.</p><table class="table"><thead><tr><th>Método</th><th>Ruta</th><th>Uso</th></tr></thead><tbody><tr><td>GET</td><td class="mono">/api/v1/subscribers</td><td>Listar abonados</td></tr><tr><td>POST</td><td class="mono">/api/v1/subscribers</td><td>Crear abonado</td></tr><tr><td>GET</td><td class="mono">/api/v1/subscribers/{document}</td><td>Estado del abonado</td></tr><tr><td>POST</td><td class="mono">/api/v1/subscribers/{document}/activate</td><td>Activar</td></tr><tr><td>POST</td><td class="mono">/api/v1/subscribers/{document}/suspend</td><td>Suspender + cerrar sesiones</td></tr><tr><td>POST</td><td class="mono">/api/v1/subscribers/{document}/renew</td><td>Renovar</td></tr><tr><td>POST</td><td class="mono">/api/v1/subscribers/{document}/plan</td><td>Cambiar plan</td></tr><tr><td>GET</td><td class="mono">/api/v1/health</td><td>Salud Astra/canales</td></tr></tbody></table></div>
+@endsection

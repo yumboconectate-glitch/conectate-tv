@@ -1,0 +1,52 @@
+# Secretos
+.env
+.env.*
+!.env.example
+.htpasswd
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Dependencias
+vendor/
+node_modules/
+
+# Laravel
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+bootstrap/cache/*.php
+
+# Base de datos / backups
+*.sql
+*.sql.gz
+*.dump
+*.bak
+*.bak.*
+*.tar
+*.tar.gz
+*.zip
+*pre-v0*
+*-backup-*
+.v*-last-backup
+
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Reportes locales de seguridad
+SECRET_SCAN_REPORT.txt
+GIT_DIFF_CHECK.txt
+
+# Backups locales
+*.bak
+*.bak-*
+*.bak-v*
+*backup*
+*pre-v0*
